@@ -7,10 +7,10 @@
 </div>
 
 <map name="mapa_zonas">
-    <area shape="rect" coords="122,136,185,198" alt="Edificio N" wire:click="mostrarBuildings(17)"/>
+    <area shape="rect" coords="122,136,185,198" alt="Edificio N" wire:click="mostrarBuildings(16)"/>
     <area shape="rect" coords="220,137,295,195" alt="Edificio M" wire:click="mostrarBuildings('15')" />
     <area shape="rect" coords="265,210,290,231" alt="Exterior" wire:click="mostrarBuildings('14')" />
-    <area shape="rect" coords="221,242,296,307" alt="Edificio L" wire:click="mostrarBuildings('12')" />
+    <area shape="rect" coords="221,242,296,307" alt="Edificio L" wire:click="mostrarBuildings('13')" />
     <area shape="rect" coords="324,231,406,256" alt="Edificio F" wire:click="mostrarBuildings('6')" />
     <area shape="rect" coords="413,273,503,298" alt="Edificio D" wire:click="mostrarBuildings('4')" />
     <area shape="rect" coords="381,181,446,207" alt="Edificio H" wire:click="mostrarBuildings('8')" />
