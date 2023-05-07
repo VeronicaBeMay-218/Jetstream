@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Counter;
 use App\Http\Livewire\VisualizadorNotas;
 use App\Http\Livewire\Users;
+use App\Http\Livewire\inicio;
+use App\Http\Livewire\Buildings;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,13 +26,11 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', inicio::class)->name('dashboard');
 
-    Route::get('/users',Users::class)->name('users');
+    Route::get('/users',Users::class)->name('users');//
+    Route::get('/buildings',Buildings::class);
 });
 
 Route::get('/counter',Counter::class)->name('counter');
 Route::get('/verNotas', VisualizadorNotas::class)->name('verNotas');
-//Route::get('/users',Users::class)->name('users');
