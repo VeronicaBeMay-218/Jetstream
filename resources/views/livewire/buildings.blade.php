@@ -6,7 +6,7 @@
 <div class="flex flex-col items-center">
   <p class="text-lg font-bold mb-4">Edificios</p>
 </div>
-<div class="relative flex  flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+<div class="relative flex  flex-row rounded-xl bg-gray-100 bg-clip-border text-gray-700 shadow-md">
   <div class="flex items-center">
     <img src="{{ asset('imagenes/mapa.jpg') }}" width="980" usemap="#mapa_zonas" />
 </div>
