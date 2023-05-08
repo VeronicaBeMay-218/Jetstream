@@ -1,8 +1,13 @@
 <div>
+
+
+
+
 <div class="flex flex-col items-center">
-  <p class="text-lg font-bold mb-4">Haz clic en el edificio que deseas ver</p>
+  <p class="text-lg font-bold mb-4">Edificios</p>
 </div>
-  <div class="flex justify-center items-center">
+<div class="relative flex  flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+  <div class="flex items-center">
     <img src="{{ asset('imagenes/mapa.jpg') }}" width="980" usemap="#mapa_zonas" />
 </div>
 
@@ -22,24 +27,79 @@
     <area shape="rect" coords="648,297,683,323" alt="Edificio B" wire:click="mostrarBuildings('2')" />
     <area shape="rect" coords="408,425,432,447" alt="Edificio J" wire:click="mostrarBuildings('10')" />
 </map>
-<div class="flex flex-col justify-center items-center mt-8">
+
+
+<div class="modal-container" id="modal_container">
+<div class="modal">
+
+<div class=" w-70 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+  
   @if ($nombreBuildings)
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4 overflow-hidden">
       <h2 class="text-3xl font-bold text-gray-800">{{ $nombreBuildings->nombre }}</h2>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="text-lg font-bold text-gray-700">Indicaciones: {{ $nombreBuildings->ubicacion}}</div>
+      <div class="grid grid-cols-2 gap-4">
       
       @foreach($nombreBuildings->departments as $depart)
           <div class=" ">
-            <div class="text-lg font-bold text-gray-700">{{ $depart->nombre }}</div>
-            <div class="text-sm text-gray-600">{{ $depart->encargado }}</div>
+        
+            <div class="text-lg font-bold text-gray-700">Departamento: {{ $depart->nombre }}</div>
+            <div class="text-sm text-gray-600">Encargado: {{ $depart->encargado }}</div>
           </div>
           
         @endforeach
       </div>
     </div>
+  
   @endif
+  
+</div>
+</div>
+
 </div>
 
 
+</div>
 </div>
 <script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+body{
+
+
+ 
+ 
+
+ 
+
+}
+.modal-container{
+  display:flex;
+  background-color: ;
+  align-items: center;
+  justify-content:center;
+  position: ;
+  min-height:0vh;
+  margin:0;
+  opacity: ;
+  
+  
+}
+
+.modal{
+
+  background-color: #fff;
+  width: 300px;
+  max-width: 100%;
+  border-radius:15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,2);
+  text-align: center;
+
+
+
+}
+
+</style>
+
+<script></script>

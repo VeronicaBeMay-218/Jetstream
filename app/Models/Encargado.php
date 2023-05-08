@@ -11,7 +11,7 @@ class Encargado extends Model
 
     public function departments()
 {
-    return $this->belongsToMany(Department::class, 'encargado_departamento');
+    return $this->belongsToMany(Department::class, 'encargado');
 }
 
 }
