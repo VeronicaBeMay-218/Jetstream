@@ -84,7 +84,10 @@ body{
   margin:0;
   opacity: ;
   
-  
+.show {
+  pointer-events: auto;
+  opacity:1;
+}
 }
 
 .modal{
@@ -102,4 +105,4 @@ body{
 
 </style>
 
-<script></script>
+
