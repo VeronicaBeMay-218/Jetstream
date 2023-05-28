@@ -1,6 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
+        
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="78" viewBox="0 0 101 78" fill="none">
 <g filter="url(#filter0_d_10_21)">
 <rect width="93" height="70" transform="translate(4)" fill="white"/>
