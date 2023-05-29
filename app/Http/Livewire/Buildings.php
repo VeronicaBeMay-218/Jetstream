@@ -50,14 +50,5 @@ class Buildings extends Component
         $this->detalle = "";
     }
 
-    public function selectBuilding($buildingName)
-  {
-    $this->selectedBuilding = $buildingName;
-    $this->emit('buildingSelected');
-  }
-
-  public function clearSelectedBuilding()
-  {
-    $this->selectedBuilding = null;
-  }
+    
 }

@@ -25,13 +25,5 @@ class Buscador extends Component
         ]);
     }
 
-    public function botonBusqueda($boton)
-    {
-        $this->boton_activado=$boton;
-    }
-
-    public function btnBuscarReset()
-    {
-        $this->boton_activado = 0;
-    }
+   
 }

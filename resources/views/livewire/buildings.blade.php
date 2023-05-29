@@ -1,6 +1,9 @@
 <div>
 <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-    <div class="max-w-7xl mx-auto p-6 lg:p-8">
+   
+@livewire('buscador')
+
+<div class="max-w-7xl mx-auto p-6 lg:p-8">
      
     
 
@@ -8,11 +11,10 @@
    
 
 
-    <div>
-  <div>
-    <div>
-    @livewire('buscador')
-    </div>
+    
+  
+    
+    
     </div>
     
 
@@ -63,14 +65,15 @@
                             <p class="text-black text-md m-5"> <span class="font-bold">Nombre</span> {{ $detalle_edificio->nombre }}</p>
                             <p class="text-black text-md m-5"> <span class="font-bold">Ubicación</span> {{ $detalle_edificio->ubicacion }}</p>
                             
-                            <h1>DEPARTAMENTOS</h1>
+                            <h1>DEPARTAMENTOS: </h1>
                             <table class="table mx-auto">
                              <thead>
 
                              <tr>
                                 <th></th>
                                 <th class="">Nombre</th>
-                                <th>Encargado</th>
+                                <th>Horario</th>
+                                <th>Telefono</th>
                                 
                             </tr>
 
@@ -86,7 +89,8 @@
                                     <td>{{$loop->iteration}}</td>
                                     
                                     <td class="px-3 py-2 px-3 py-2 bg-slate-100">{{ $depart->nombre }}</td>
-                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->encargado }}</td>
+                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->horario }}</td>
+                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->telefono }}</td>
                                 
 
                                 </tr>
@@ -95,7 +99,8 @@
                                 <tr>
                                 <td>{{$loop->iteration}}</td>
                                     <td class="px-3 py-2 bg-slate-100">{{ $depart->nombre }}</td>
-                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->encargado }}</td>
+                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->horario }}</td>
+                                    <td class="px-3 py-2 bg-slate-100">{{ $depart->telefono }}</td>
                                 
                                 </tr>
                                 

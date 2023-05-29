@@ -13,4 +13,9 @@ class Building extends Model
     {
         return $this->hasMany(Department::class);
     }
+
+    public function getNombreAttribute($value)
+{
+    return strtoupper($value);
+}
 }
